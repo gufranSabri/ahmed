@@ -1,0 +1,186 @@
+.experience-layout {
+	display: grid;
+	grid-template-columns: 0.86fr 1.5fr;
+	gap: 1rem;
+	align-items: stretch;
+}
+
+.experience-rail {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	padding: 0.5rem 0.45rem;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.experience-rail::before {
+	content: '';
+	position: absolute;
+	left: 1.1rem;
+	top: 0.85rem;
+	bottom: 0.85rem;
+	width: 2px;
+	background: linear-gradient(180deg, rgba(127, 211, 255, 0.65), rgba(165, 140, 255, 0.18));
+	opacity: 0.5;
+}
+
+.experience-company {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	width: 100%;
+	padding: 0.7rem 0.7rem 0.7rem 0.45rem;
+	border: 1px solid transparent;
+	border-radius: 0.74rem;
+	background: transparent;
+	color: #d5def8;
+	text-align: left;
+	font-family: inherit;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background 0.24s ease, border-color 0.24s ease, transform 0.24s ease;
+}
+
+.experience-company:hover {
+	background: rgba(85, 111, 231, 0.14);
+	border-color: rgba(127, 153, 255, 0.3);
+	transform: translateX(2px);
+}
+
+.experience-company.active {
+	background: rgba(85, 111, 231, 0.22);
+	border-color: rgba(127, 153, 255, 0.48);
+	color: #f2f6ff;
+}
+
+.experience-dot {
+	position: relative;
+	z-index: 1;
+	width: 0.68rem;
+	height: 0.68rem;
+	border-radius: 999px;
+	background: #8ad8ff;
+	box-shadow: 0 0 0 3px rgba(13, 16, 32, 0.95);
+	flex-shrink: 0;
+	opacity: 0.55;
+	transition: opacity 0.24s ease, transform 0.24s ease;
+}
+
+.experience-company.active .experience-dot {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+.experience-company-text {
+	line-height: 1.35;
+	font-weight: 600;
+}
+
+.experience-panel {
+	padding: 1.2rem;
+	border: 1px solid rgba(141, 160, 231, 0.34);
+	background: linear-gradient(180deg, rgba(24, 31, 58, 0.86), rgba(18, 23, 44, 0.9));
+	border-radius: 1.05rem;
+	animation: experienceFade 0.28s ease;
+	min-height: 220px;
+}
+
+.experience-header h3 {
+	margin: 0;
+	font-size: 1.05rem;
+	font-weight: 700;
+	color: #eef3ff;
+	line-height: 1.35;
+}
+
+.experience-header h3 span {
+	color: #8fdcff;
+	font-weight: 700;
+	margin-left: 0.3rem;
+}
+
+.experience-header p {
+	margin: 0.35rem 0 0;
+	color: #c6d0ed;
+	font-size: 0.9rem;
+}
+
+.experience-period {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 0.6rem;
+	padding: 0.27rem 0.55rem;
+	border-radius: 999px;
+	font-size: 0.79rem;
+	font-weight: 600;
+	color: #dbe8ff;
+	background: rgba(122, 233, 248, 0.18);
+	border: 1px solid rgba(129, 157, 255, 0.34);
+}
+
+.experience-highlights {
+	margin: 1rem 0 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0.58rem;
+}
+
+.experience-highlights li {
+	position: relative;
+	padding-left: 1.15rem;
+	color: #d4def7;
+	font-size: 0.9rem;
+	line-height: 1.52;
+}
+
+.experience-highlights li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.52rem;
+	width: 0.46rem;
+	height: 0.46rem;
+	border-radius: 999px;
+	background: linear-gradient(135deg, #7fd3ff, #a58cff);
+}
+
+.experience-ongoing {
+	margin: 1rem 0 0;
+	color: #d4def7;
+	font-size: 0.9rem;
+}
+
+@keyframes experienceFade {
+	from {
+		opacity: 0;
+		transform: translateY(7px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 860px) {
+	.experience-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.experience-rail {
+		padding: 0.45rem;
+	}
+
+	.experience-rail::before {
+		display: none;
+	}
+
+	.experience-company {
+		padding-left: 0.55rem;
+	}
+}

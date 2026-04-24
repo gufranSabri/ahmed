@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
+}
+
+:root {
+	--bg: #0d1020;
+	--bg-soft: #12162a;
+	--surface: #040506;
+	--surface-2: #1f2541;
+	--text: #edf1ff;
+	--muted: #b5bfd9;
+	--line: #343d64;
+	--accent: #7fd3ff;
+	--accent-2: #a58cff;
+	--accent-3: #45e0b8;
+	--card-shadow: 0 14px 34px rgba(9, 12, 28, 0.4);
+}
+
+body {
+	font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+	color: var(--text);
+	line-height: 1.56;
+	background:
+		radial-gradient(circle at 12% -8%, rgba(127, 211, 255, 0.2), transparent 36%),
+		radial-gradient(circle at 88% 3%, rgba(165, 140, 255, 0.16), transparent 34%),
+		radial-gradient(circle at 50% 120%, rgba(69, 224, 184, 0.12), transparent 45%),
+		linear-gradient(180deg, #0d1020, #0f1427 42%, #0c1021);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	margin: 0;
+	min-height: 100%;
+}
+
+body {
+	padding-top: 5.5rem;
+}
+
+.header-shell {
+	position: fixed;
+	top: 0.8rem;
+	left: 0;
+	right: 0;
+	z-index: 80;
+	pointer-events: none;
+}
+
+.header-shell .container {
+	pointer-events: auto;
+}
+
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.85rem 1rem;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(132, 150, 217, 0.42);
+	border-radius: 0.95rem;
+	background: rgba(15, 20, 39, 0.82);
+	backdrop-filter: blur(10px);
+  margin-top: 10px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.top-nav nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.9rem;
+	justify-content: flex-end;
+}
+
+.top-nav a {
+	font-size: 0.86rem;
+	color: #d2daf1;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+
+.top-nav a:hover {
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+
+
+.logo {
+	margin: 0;
+	font-family: 'Sora', 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 0.95rem;
+	letter-spacing: 0.03em;
+}
+
+.logo span {
+	background: linear-gradient(90deg, var(--accent), var(--accent-2));
+	background-clip: text;
+	color: transparent;
+}

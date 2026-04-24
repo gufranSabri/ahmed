@@ -1,0 +1,66 @@
+.card {
+	border: 1px solid rgba(141, 160, 231, 0.34);
+	background: linear-gradient(180deg, rgba(24, 31, 58, 0.86), rgba(18, 23, 44, 0.9));
+	border-radius: 1.9rem;
+	box-shadow: var(--card-shadow);
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 1.28fr 1fr;
+	gap: 1rem;
+}
+
+.about-card {
+	padding: 1.16rem;
+}
+
+.about-card p {
+	margin: 0;
+	color: #ccd5ef;
+}
+
+.about-card p + p {
+	margin-top: 0.8rem;
+}
+
+.about-tags {
+	margin-top: 1rem;
+	display: flex;
+	gap: 0.55rem;
+	flex-wrap: wrap;
+}
+
+.about-tags span {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.38rem;
+	padding: 0.34rem 0.56rem;
+	font-size: 0.79rem;
+	font-weight: 600;
+	color: #dbe7ff;
+	border-radius: 999px;
+	background: rgba(80, 114, 238, 0.2);
+	border: 1px solid rgba(129, 157, 255, 0.38);
+}
+
+.accomplishment-tags {
+	margin-top: 1rem;
+	display: flex;
+	gap: 0.55rem;
+	flex-wrap: wrap;
+}
+
+
+.accomplishment-tags span {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.38rem;
+	padding: 0.34rem 0.56rem;
+	font-size: 0.79rem;
+	font-weight: 600;
+	color: #dbe7ff;
+	border-radius: 5px;
+	background: rgba(122, 233, 248, 0.2);
+	border: 1px solid rgba(129, 157, 255, 0.38);
+}
