@@ -206,3 +206,22 @@
 		width: 1.35rem;
 	}
 }
+
+@media (max-width: 450px) {
+	.projects-carousel-shell {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.projects-nav-button {
+		display: none;
+	}
+
+	.project-card {
+		height: auto;
+		min-height: 0;
+	}
+
+	.project-tags {
+		display: none;
+	}
+}

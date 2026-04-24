@@ -110,3 +110,33 @@ a {
 	background-clip: text;
 	color: transparent;
 }
+
+.greeting-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+@media (max-width: 450px) {
+	body {
+		padding-top: 1rem;
+	}
+
+	.header-shell {
+		display: none;
+	}
+
+	.greeting-layout {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.greeting-content,
+	.greeting-intro {
+		text-align: center;
+	}
+
+	.greeting-actions {
+		justify-content: center;
+	}
+}

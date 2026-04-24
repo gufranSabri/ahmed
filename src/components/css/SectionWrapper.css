@@ -39,3 +39,9 @@
   height: 2px;
   background: linear-gradient(90deg, var(--accent), transparent);
 }
+
+@media (max-width: 450px) {
+  .section-heading {
+    font-size: 1.3rem;
+  }
+}

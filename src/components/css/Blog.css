@@ -197,3 +197,18 @@
 		width: 1.35rem;
 	}
 }
+
+@media (max-width: 450px) {
+	.blog-carousel-shell {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.blog-nav-button {
+		display: none;
+	}
+
+	.blog-card {
+		height: auto;
+		min-height: 0;
+	}
+}
