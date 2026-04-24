@@ -55,7 +55,7 @@ const Greeting = () => {
   return (
     <div className="container d-flex align-items-center gap-4 greeting-layout">
       <img src={ahmedImage} alt="Profile" style={{borderRadius:"100px", height:"150px", width:"150px"}}/>
-      <div className="greeting-content">
+      <div>
             <h1 className="greeting">
                 {renderTypedText()}
                 <span style={{visibility: showCursor ? "visible" : "hidden",}}>|</span>
@@ -88,6 +88,7 @@ const Greeting = () => {
                             "_blank"
                             )
                         }
+                        style={{ marginLeft: "10px" }}
                         >
                         <GraduationCap size={18} /> &nbsp; Google Scholar
                       </button>
@@ -97,6 +98,7 @@ const Greeting = () => {
                         onClick={() =>
                             window.open("https://github.com/gufranSabri", "_blank")
                         }
+                        style={{ marginLeft: "10px" }}
                         >
                         <Cat size={18} /> &nbsp; Github
                       </button>
@@ -105,6 +107,7 @@ const Greeting = () => {
                         className="btn btn-success mt-3"
                         href={cvFile}
                         download
+                        style={{ marginLeft: "10px" }}
                         >
                         <FileText size={18} /> &nbsp; Download CV
                       </a>

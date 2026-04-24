@@ -111,12 +111,6 @@ a {
 	color: transparent;
 }
 
-.greeting-actions {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-}
-
 @media (max-width: 450px) {
 	body {
 		padding-top: 1rem;
@@ -128,15 +122,27 @@ a {
 
 	.greeting-layout {
 		flex-direction: column;
-		align-items: center;
+		align-items: center !important;
+		text-align: center;
 	}
 
-	.greeting-content,
-	.greeting-intro {
+	.greeting-layout > div {
+		width: 100%;
+	}
+
+	.greeting-layout p,
+	.greeting-layout h1 {
 		text-align: center;
 	}
 
 	.greeting-actions {
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.greeting-actions .btn {
+		margin-left: 0 !important;
 	}
 }

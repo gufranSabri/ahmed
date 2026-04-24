@@ -219,6 +219,7 @@
 	.project-card {
 		height: auto;
 		min-height: 0;
+		grid-template-rows: auto auto auto;
 	}
 
 	.project-tags {
