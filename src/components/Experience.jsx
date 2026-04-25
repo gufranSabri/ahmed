@@ -31,7 +31,7 @@ const experiences = [
       'Developed an Inventory Management System (Deep Learning)',
       'Developed a Haptic VR Glove (IoT, Game Dev)',
     ],
-  },
+  }
 ]
 
 const Experience = () => {
