@@ -3,13 +3,13 @@ import { useState } from 'react'
 import './css/Experience.css'
 
 const experiences = [
-  {
-    company: 'Aramco',
-    location: 'Dhahran, KSA',
-    role: 'Software Engineer',
-    period: 'Apr 2026 - Present',
-    highlights: [],
-  },
+  // {
+  //   company: 'Aramco',
+  //   location: 'Dhahran, KSA',
+  //   role: 'Software Engineer',
+  //   period: 'Apr 2026 - Present',
+  //   highlights: [],
+  // },
   {
     company: 'ICS Dept. @ KFUPM',
     location: 'Dhahran, KSA',
