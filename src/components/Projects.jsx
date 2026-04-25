@@ -8,7 +8,7 @@ const projects = [
     title: 'USTM: Unified Spatial and Temporal Modeling for Continuous Sign Language Recognition',
     description:
       'Developed a novel video adapter for vision transformers to improve temporal learning for sign language recognition. Achieved state-of-the-art results on benchmarks.',
-    tags: ['Vision Transformers', 'Temporal Modeling', 'PyTorch'],
+    tags: ['Vision Transformers', 'Temporal Modeling'],
     githubUrl: 'https://github.com/gufranSabri/USTM',
     paperUrl: "https://arxiv.org/pdf/2512.13415",
   },
@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'EyeQ: Conversational Diagnostic Assistant for Ocular and Systemic Disease Risk Assessment',
     description: 'Built a multimodal conversational diagnostic AI with interactive dashboards, securing 1st place at KKESH EyeHackathon 2025.',
-    tags: ['Multimodal LLMs', 'Conversational AI', 'Dashboard Systems'],
+    tags: ['Multimodal LLMs', 'Conversational AI', 'xAI'],
     githubUrl: null,
     paperUrl: null,
   },
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'ViPo-MLLM: Visual-Pose Multimodal LLM for Gloss-Free Sign Language Translation',
     description: 'Developed a multimodal sign language translation system; achieved state-of-the-art results on benchmarks.',
-    tags: ['Vision Transformers', 'Multimodal Learning', 'PyTorch'],
+    tags: ['Vision Transformers', 'Multimodal Learning'],
     githubUrl: 'https://github.com/gufranSabri/ViPo-SLT',
     paperUrl: null,
   },
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'SignEval 2025 Challenge @ ICCV Workshop',
     description: 'Co-managed an ICCV 2025 workshop, developing the official website and a starter kit for the sign language recognition challenge.',
-    tags: ['React', 'JavaScript', 'Web Development'],
+    tags: ['React'],
     githubUrl: "https://multimodal-sign-language-recognition.github.io/ICCV-2025/",
     paperUrl: "https://openaccess.thecvf.com/content/ICCV2025W/MSLR/papers/Luqman_The_SignEval_2025_Challenge_at_the_ICCV_Multimodal_Sign_Language_ICCVW_2025_paper.pdf",
   },
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'KI-CLIP: Knowledge-Injected Distillation for Action Recognition',
     description: 'Improved knowledge distillation in a CLIP framework for open vocabulary action recognition. Achieved state-of-the-art results on benchmarks.',
-    tags: ['CLIP', 'Knowledge Distillation', 'PyTorch'],
+    tags: ['CLIP', 'Knowledge Distillation'],
     githubUrl: 'https://github.com/gufranSabri/KICLIP',
     paperUrl: null,
   },
@@ -49,7 +49,7 @@ const projects = [
   {
     title: 'FSBI: Deepfake detection with frequency enhanced self-blended images.',
     description: 'Self-Blended images: create synthetic deep fakes using various face augmentation techniques. Enhance using Discrete Wavelet Transforms to prioritize frequency artifacts in deepfakes.',
-    tags: ['Deepfake Detection', 'Wavelet Transform', 'PyTorch'],
+    tags: ['Deepfake Detection', 'Wavelet Transform'],
     githubUrl: 'https://github.com/gufranSabri/FSBI',
     paperUrl: "https://arxiv.org/pdf/2406.08625",
   },
@@ -57,7 +57,7 @@ const projects = [
   {
     title: 'AraReasoner: Evaluating Reasoning-Based LLMs for Arabic NLP',
     description: 'This study benchmarks reasoning-focused LLMs on diverse Arabic NLP tasks, showing that few-shot prompting, DeepSeek architectures, and LoRA fine-tuning significantly improve performance on complex linguistic reasoning.',
-    tags: ['Large Language Models', 'Few-shot Learning', 'LoRA'],
+    tags: ['LLMs', 'Few-shot Learning', 'LoRA'],
     githubUrl: 'https://github.com/gufranSabri/deepseek-evals',
     paperUrl: "https://aclanthology.org/anthology-files/pdf/findings/2025.findings-emnlp.1028.pdf",
   },

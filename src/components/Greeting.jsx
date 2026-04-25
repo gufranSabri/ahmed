@@ -64,7 +64,7 @@ const Greeting = () => {
             {showIntro && (
                 <div className="greeting-intro" style={{ animation: "fadeIn 0.6s ease-in-out" }}>
                     <p>
-                    AI researcher and full-stack developer specializing in computer vision and large language models, building intelligent systems that bridge perception and language.
+                    AI researcher and full-stack developer specializing in computer vision and natural language processing, building intelligent systems that bridge perception and language.
                     </p>
 
                     <div className="greeting-actions">
