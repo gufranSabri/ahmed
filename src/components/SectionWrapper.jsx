@@ -1,46 +1,33 @@
+import { motion } from 'framer-motion'
 import './css/SectionWrapper.css'
-import { useEffect, useRef, useState } from 'react'
 
-const SectionWrapper = ({ id, heading, children, lineVisibility }) => {
-  const sectionRef = useRef(null)
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const currentSection = sectionRef.current
-
-    if (!currentSection) {
-      return
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.unobserve(currentSection)
-        }
-      },
-      { threshold: 0.15 }
-    )
-
-    observer.observe(currentSection)
-
-    return () => {
-      observer.unobserve(currentSection)
-    }
-  }, [])
-
+const SectionWrapper = ({ id, index, fnName, heading, children }) => {
   return (
-    <section
-      className={`section-wrapper container ${isVisible ? 'is-visible' : ''}`}
+    <motion.section
+      className="section-wrapper container"
       id={id}
-      ref={sectionRef}
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className='section-header'>
-        <h2 className='section-heading'>{heading}</h2>
-        <div className='section-line' style={{visibility: lineVisibility ? "visible" : "hidden"}}></div>
-      </div>
+      {heading ? (
+        <div className="section-header">
+          <p className="section-kicker">
+            <span className="num">{index}</span>
+            <span>//</span>
+            <span>{heading.toLowerCase().replace(/\s+/g, '-')}</span>
+          </p>
+          <h2 className="section-heading">
+            <span className="fn">{fnName}</span>
+            <span className="punct">(</span>
+            {heading}
+            <span className="punct">)</span>
+          </h2>
+        </div>
+      ) : null}
       {children}
-    </section>
+    </motion.section>
   )
 }
 

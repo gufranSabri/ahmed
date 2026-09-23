@@ -1,0 +1,155 @@
+.hero {
+	position: relative;
+	padding: 3rem 0 4rem;
+}
+
+.hero-container {
+	display: flex;
+}
+
+.hero-editor {
+	width: 100%;
+	overflow: hidden;
+}
+
+.panel-titlebar-spacer {
+	flex: 1;
+}
+
+.hero-body {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	padding: 2.2rem 2rem;
+}
+
+.hero-code {
+	flex: 1;
+	min-width: 0;
+}
+
+.hero-code-block {
+	margin: 0 0 1.3rem;
+	font-family: var(--font-mono);
+	font-size: clamp(0.82rem, 1.6vw, 1.02rem);
+	line-height: 2;
+	white-space: pre;
+	color: var(--text);
+	display: block;
+	overflow-x: auto;
+	max-width: 100%;
+	padding-bottom: 0.3rem;
+}
+
+.hero-code-block .gutter-number {
+	display: inline-block;
+	width: 1.6rem;
+	color: var(--line-number);
+	text-align: right;
+	margin-right: 1.1rem;
+	user-select: none;
+}
+
+.syn-keyword { color: var(--syn-keyword); }
+.syn-string { color: var(--syn-string); }
+.syn-function { color: var(--syn-function); }
+.syn-comment { color: var(--syn-comment); }
+.syn-const { color: var(--syn-const); }
+.syn-tag { color: var(--syn-tag); }
+.syn-accent { color: var(--syn-accent); }
+
+.hero-desc {
+	margin: 0 0 1.6rem 2.7rem;
+	font-family: var(--font-mono);
+	font-size: 0.82rem;
+	line-height: 1.7;
+}
+
+.hero-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	margin-left: 2.7rem;
+}
+
+.hero-portrait {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px dashed var(--border);
+	padding-left: 2.5rem;
+}
+
+.particle-portrait {
+	display: block;
+}
+
+.hero-statusbar {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.4rem 1rem;
+	background: var(--accent);
+	color: var(--bg-editor);
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	font-weight: 600;
+}
+
+.hero-statusbar-spacer {
+	flex: 1;
+}
+
+.hero-statusbar-live {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.hero-statusbar-live-dot {
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+	background: var(--bg-editor);
+	animation: livePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.35; }
+}
+
+.hero-scroll-cue {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.hero-body {
+		flex-direction: column-reverse;
+		padding: 1.6rem 1.2rem 2rem;
+	}
+
+	.hero-portrait {
+		border-left: none;
+		border-bottom: 1px dashed var(--border);
+		padding-left: 0;
+		padding-bottom: 1.6rem;
+	}
+
+	.hero-desc,
+	.hero-actions {
+		margin-left: 0;
+	}
+
+	.hero-code-block {
+		font-size: 0.76rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-code-block .gutter-number {
+		width: 1.1rem;
+		margin-right: 0.6rem;
+	}
+}

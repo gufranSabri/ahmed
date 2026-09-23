@@ -2,9 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/src/assets/crow.png" />
+    <link rel="icon" type="image/png" href="/src/assets/quackBERT.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed Hasanaath</title>
+    <meta name="description" content="Ahmed Abul Hasanaath — AI researcher and full-stack developer specializing in computer vision and NLP." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Ahmed Abul Hasanaath</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ahmed-portfolio-theme');
+          var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

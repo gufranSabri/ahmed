@@ -1,47 +1,22 @@
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .section-wrapper {
-  margin-top: 50px;
-  opacity: 0;
-  scroll-margin-top: 6rem;
+	position: relative;
+	scroll-margin-top: 4rem;
+	padding-top: 3.25rem;
+	padding-bottom: 3.25rem;
+	border-top: 1px dashed var(--border);
 }
 
-.section-wrapper.is-visible {
-  animation: fadeIn 0.6s ease-in-out forwards;
+.section-wrapper:first-of-type {
+	border-top: none;
 }
 
 .section-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+	margin-bottom: 2.4rem;
 }
 
-.section-heading {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--text);
-  white-space: nowrap;
-}
-
-.section-line {
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-}
-
-@media (max-width: 450px) {
-  .section-heading {
-    font-size: 1.35rem;
-  }
+@media (max-width: 640px) {
+	.section-wrapper {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 }

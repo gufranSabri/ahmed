@@ -1,53 +1,41 @@
 import SectionWrapper from './components/SectionWrapper'
-import Header from './components/header'
-import Greeting from './components/greeting'
-import About from './components/about'
-import Experience from './components/experience'
-import Projects from './components/projects'
-import Blog from './components/blog'
-import Contact from './components/contact'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Blog from './components/Blog'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header />
 
-      <SectionWrapper id="home" heading="" lineVisibility={false}>
-        <Greeting/>
+      <Hero />
+
+      <SectionWrapper id="highlights" index="01" fnName="highlights" heading="Recognition">
+        <Blog />
       </SectionWrapper>
 
-      <div style={{padding:"35px"}}></div>
-
-      <SectionWrapper heading="/Blog" lineVisibility={true}>
-        <Blog/>
+      <SectionWrapper id="about" index="02" fnName="about" heading="Who I Am">
+        <About />
       </SectionWrapper>
 
-      <div style={{padding:"75px"}}></div>
-
-      <SectionWrapper id="about" heading="/About Me" lineVisibility={true}>
-        <About/>
+      <SectionWrapper id="experience" index="03" fnName="experience" heading="Career Log">
+        <Experience />
       </SectionWrapper>
 
-      <div style={{padding:"75px"}}></div>
-
-      <SectionWrapper id="experience" heading="/Experience" lineVisibility={true}>
-        <Experience/>
+      <SectionWrapper id="projects" index="04" fnName="projects" heading="Selected Work">
+        <Projects />
       </SectionWrapper>
 
-      <div style={{padding:"75px"}}></div>
-
-      <SectionWrapper id="projects" heading="/Projects & Publications" lineVisibility={true}>
-        <Projects/>
+      <SectionWrapper id="contact" index="05" fnName="contact" heading="Get In Touch">
+        <Contact />
       </SectionWrapper>
 
-      <div style={{padding:"75px"}}></div>
-
-      <SectionWrapper id="contact" heading="/Contact" lineVisibility={true}>
-        <Contact/>
-      </SectionWrapper>
-
-      <div style={{padding:"50px"}}></div>
-
+      <Footer />
     </div>
   )
 }
