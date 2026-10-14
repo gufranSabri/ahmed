@@ -121,7 +121,7 @@ const Hero = () => {
                 </a>
                 <a
                   className="btn"
-                  href="https://scholar.google.com/citations?user=Zt9nXoAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?hl=en&user=-DYCJYIAAAAJ"
                   target="_blank"
                   rel="noreferrer"
                 >
